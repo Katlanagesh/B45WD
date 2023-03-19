@@ -1,0 +1,13 @@
+Window Object:
+ 1- It is Global Object
+ 2- It represent a Browser window
+ 3- It appear on the screen to display the contents of document
+ 4- It is the top most object and outermost element of the object.
+ 
+Document object:
+ 1- It is property of window object.
+ 2- It represent the HTML document is loaded into a web browser
+ 3- You can access either using window.document property.
+ 4- It is the root node of the HTML document
+ 
+
