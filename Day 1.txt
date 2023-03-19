@@ -1,0 +1,38 @@
+1)  Difference between HTTP1.1 vs HTTP2
+
+HTTP->HTTP is a top-level application protocol that exchanges information 
+      between a client computer and a local or remote web server
+HTTP1.1
+1- It connect the server with 3TCP(Transfer control protocals)to the server
+2- Syntax and semantics are seperated
+3- some methods and responsive codes are added
+4- Open connection in base line
+-> With this basic overview of HTTP/1.1 out of the way, we can now move on to
+   recounting the early development of HTTP/2
+
+HTTP2
+1- It connect the server with 1TCP(Transfer control protocals)to the server
+2- Addition of server push function(send related file without request)
+3- supports of parallel request transmissin by stream
+4- Open connection multiplexing line
+5- It uses header compression to reduce overhead
+->the intention of reducing web page load latency by using techniques such as 
+  compression, multiplexing, and prioritization
+
+2)Write a blog about objects and its internal representation in Javascript
+  
+OBJECTS-It is the most important data-type and forms the building blocks for modern JavaScript
+     - It is different from JavaScript data-types(Number, String, Boolean, null, undefined and symbol)
+     - It is more complex and each object may contain any combination of these primitive data-types as
+       well as reference data-types
+ ->  unordered collection of related data,of primitive or reference types,in the form of “key:value” pairs.
+     These keys can be variables or functions and are called properties and methods,respectively,in the context of an object.
+
+for.eg:If your object is a student, it will have properties like name, age, address, id, etc and methods like updateAddress, updateName, etc.
+
+     var Nagesh = new Object();
+     Nagesh.age = '22';
+     Nagesh.adress = 'Mulugu';
+     Nagesh.mobile = 6300156132
+  Unassigned properties of an object are undefined 
+     Nagesh.weight = undefined.
