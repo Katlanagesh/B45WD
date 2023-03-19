@@ -1,0 +1,18 @@
+window
+ 1-The window is the first thing that gets loaded into the browser. 
+ 2-window object represents the current browsing context.
+ 3-It holds things like window.location, window.history, window.screen, 
+    window.status, or the window.document
+ 4-window object is supported by all browsers.
+
+
+
+screen
+ 1-It is a small information object about physical screen dimensions.
+ 2-It can be used to display screen width, height, colorDepth, pixelDepth etc
+
+document
+ 1-Document interface represents any web page loaded in the browser and 
+    serves as an entry point into the web page's content.
+ 2-The document actually gets loaded inside the window object and has properties
+    available to it like title, URL, etc.
