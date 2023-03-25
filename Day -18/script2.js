@@ -26,7 +26,7 @@ let z = document.createElement("img")
 z.src = value.flags.png;
 
 let a = document.createElement("p")
-a.innerText = `Capital : ${value.capital} \n Region : ${value.region} \n Country Code : ${value.countrycode}`;
+a.innerText = `Capital : ${value.capital} \n Region : ${value.region} \n Country Code : ${value.cioc}`;
 
 let b = document.createElement("button")
 b.innerText = "click for weather"
@@ -41,8 +41,15 @@ x.appendChild(b)
         // console.log(value)
         fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${value.latlng[0]}&lon=${value.latlng[1]}&appid=ec971d0ba596e458307433de95ee3391`)
        .then((data1)=> data1.json())
-       .then((result)=> console.log(result.coord));
-       
+    //    .then((result)=> console.log(result.coord));
+    .then((result)=>
+    alert(`
+    For ${value.name.common}  
+Current Humidity is ${result.coord.lat}
+Current Humidity is ${result.coord.lon}
+
+
+`))
     })
      
     document.body.appendChild(x)
