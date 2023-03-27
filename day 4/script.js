@@ -35,28 +35,28 @@ xhr.onload = function () {
 
 
 //using the given url display the country name, region,subregion,population in console
-//   let data = document.createElement("div");
-// document.body.appendChild(data);
-//    // create a new xmlhttprequest object
-// let xhr = new XMLHttpRequest();
-// // configure request
-// xhr.open("GET", "https://restcountries.com/v3.1/all");
-// // send over the network
-// xhr.send();
-// xhr.onload = function () {
-//     if (xhr.status == 200) {
-//       let users = JSON.parse(xhr.response);
+  let data = document.createElement("div");
+document.body.appendChild(data);
+   // create a new xmlhttprequest object
+let xhr = new XMLHttpRequest();
+// configure request
+xhr.open("GET", "https://restcountries.com/v3.1/all");
+// send over the network
+xhr.send();
+xhr.onload = function () {
+    if (xhr.status == 200) {
+      let users = JSON.parse(xhr.response);
       
       
-//       users.forEach((value, index) => {
-//          let p = document.createElement("p");
-//          p.innerHTML =`<b>${value.name.common}</b> : ${value.region} : ${value.subregion} : ${value.population}`;
-//          div.appendChild(p);
-//        });
-//     } else {
-//       console.log(xhr.status);
-//     }
-//   };
+      users.forEach((value, index) => {
+         let p = document.createElement("p");
+         p.innerHTML =`<b>${value.name.common}</b> : ${value.region} : ${value.subregion} : ${value.population}`;
+         div.appendChild(p);
+       });
+    } else {
+      console.log(xhr.status);
+    }
+  };
 
 
 
