@@ -1,27 +1,28 @@
 //Display countdown from 10 to 1 on screen and then display
 // Happy Independence day on the screen
+let time = document.getElementById('display');
 setTimeout(function () {
-    console.log('10'); 
+    time.innerHTML="10"; 
     setTimeout(function () {
-        console.log(" 9");
+        time.innerHTML=" 9";
         setTimeout(function () {
-            console.log(" 8");
+            time.innerHTML=" 8";
             setTimeout(function() {
-                console.log("7");
+                time.innerHTML="7";
                 setTimeout(function () {
-                    console.log("6");
+                    time.innerHTML="6";
                     setTimeout(function () {
-                        console.log("5");
+                        time.innerHTML="5";
                         setTimeout(function () {
-                            console.log("4");
+                            time.innerHTML="4";
                             setTimeout(function () {
-                                console.log("3");
+                                time.innerHTML="3";
                                 setTimeout(function () {
-                                    console.log("2");
+                                    time.innerHTML="2";
                                     setTimeout(function () {
-                                        console.log("1");
+                                        time.innerHTML="1";
                                         setTimeout(function () {
-                                            console.log("Happy Independence day");
+                                            time.innerHTML="Happy Independence day";
                                 
                                         }, 1000);
                                     }, 1000);
