@@ -15,7 +15,7 @@ countryNameList.addEventListener("change", function(event){
       countryName= countriesData;
       let options = "";
      
-      countryName.forEach(country =>  options += `<option value="${country.city}">${country.id}</option> ` )
+      countryName.forEach(country =>  options += `<option value="${country.city}">${country.city}</option> ` )
      
       countryNameList.innerHTML = options;
      
